@@ -1,0 +1,27 @@
+{
+  "name": "csci4611-assignment",
+  "version": "1.0.0",
+  "description": "CSci-4611 Assignment",
+  "author": "CSci-4611 Instructors <csci4611@umn.edu>",
+  "license": "Private",
+  "type": "module",
+  "devDependencies": {
+    "@gltf-transform/core": "^3.5.1",
+    "@types/dat.gui": "^0.7.10",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "dat.gui": "^0.7.9",
+    "esbuild-plugin-glsl": "^1.1.0",
+    "eslint": "^8.23.0",
+    "gophergfx": "github:illusioneering/GopherGfx",
+    "javascript-obfuscator": "^4.0.0",
+    "vite": "^3.1.0",
+    "vite-plugin-glsl": "^0.3.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build && javascript-obfuscator ./dist/index.js --output ./dist/index.js --simplify false",
+    "preview": "vite preview"
+  }
+}

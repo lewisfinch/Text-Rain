@@ -1,0 +1,68 @@
+
+/* remove scrollbars, make canvas fill the window */
+body {
+    overflow: hidden;
+    margin: 0px;
+}
+
+
+/* Custom styling for dat.gui */
+
+/* remove the non-harmonious, random colors for each type of each control that
+   show up on the left sidebar for each control. */
+.dg .cr.boolean {
+    border-left: 3px solid rgb(47, 161, 214) !important;
+}
+
+.dg .cr.color {
+    border-left: 3px solid rgb(47, 161, 214) !important;
+}
+
+.dg .cr.function {
+    border-left: 3px solid rgb(47, 161, 214) !important;
+}
+
+.dg .cr.number {
+    border-left: 3px solid rgb(47, 161, 214) !important;
+}
+
+.dg .cr.string {
+    border-left: 3px solid rgb(47, 161, 214) !important;
+}
+
+/* change the browser's accent color (used to style checkboxes, etc.) to match */
+input {
+    accent-color: rgb(47, 161, 214);
+}
+
+
+/* in dat.gui, the "function" style is used for buttons, but these look more 
+   like lables, not buttons or even links. adjust style to make them behave more
+   like buttons */
+.dg .cr.function {
+    color: rgb(47, 161, 214);
+    font-weight: bold;
+    text-align: center;
+}
+
+.dg .cr.function:hover {
+    color: rgb(255, 255, 255);
+}
+
+.dg .cr.function:active {
+    color: rgb(236, 105, 90);
+}
+
+
+/* also modify the open/close controls button to behave a bit more like a button */
+.dg .close-button {
+    color: rgb(47, 161, 214); 
+}
+
+.dg .close-button:hover {
+    color: rgb(255, 255, 255); 
+}
+
+.dg .close-button:active {
+    color: rgb(236, 105, 90);
+}
