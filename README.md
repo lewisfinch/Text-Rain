@@ -1,7 +1,3 @@
-CSci-4611 Assignment 1
-
-Name: Yicheng Zhai
-
 Feature Added:
 
 - Gravity Added
